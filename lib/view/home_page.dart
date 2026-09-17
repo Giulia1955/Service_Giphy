@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:api_gif/service/giphy_service.dart';
-import 'package:api_gif/view/gif_page.dart';
+import 'package:api_gif/view/giphy_page.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -102,7 +102,7 @@ class _HomePageState extends State<HomePage> {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => GifPage(gif: gif),
+                  builder: (context) => GiphyPage(gif),
                 ),
               );
             }, // Fechamento do onTap
